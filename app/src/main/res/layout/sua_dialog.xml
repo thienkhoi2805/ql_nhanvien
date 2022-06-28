@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sửa nhân viên"
+        android:textColor="@color/white"
+        android:background="@color/green"
+        android:gravity="center"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/edt_hoten_nv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Họ tên"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/edt_email_nv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/edt_sdt_nv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số điện thoại"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/edt_chucvu_nv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Chức vụ"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btn_sua_nv"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sửa"
+        />
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ql_nhansu">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Quản lý nhân sự"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ql_nhansu">
+        <activity
+            android:name=".DanhSachNhanVien"
+            android:exported="true"
+            android:label="Danh sách nhân viên" >>>
+
+        </activity>
+        <activity
+            android:name=".XacNhanLuong"
+            android:exported="false" />
+        <activity
+            android:name=".TinhLuongNhanVien"
+            android:exported="true"
+            android:label="Tính lương nhân viên" >>
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

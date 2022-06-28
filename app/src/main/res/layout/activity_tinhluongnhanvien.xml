@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TinhLuongNhanVien"
+    android:orientation="vertical">
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_hotennv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="clear_text" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_hotennv"
+            style="@style/TextStyle"
+            android:hint="Nhập họ tên nhân viên"
+            android:background="@color/white"
+            android:textColor="#000000" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="clear_text" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_email"
+            style="@style/TextStyle"
+            android:hint="Nhập email nhân viên"
+            android:background="@color/white"
+            android:textColor="#000000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spn_chucvu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_luongcb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="clear_text" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_luongcb"
+            style="@style/TextStyle"
+            android:background="@color/white"
+            android:enabled="false"
+            android:textColor="#FF0000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Phụ cấp"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/chk_antrua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextStyle"
+            android:layout_weight="2"
+            android:checked="false"
+            android:text="Ăn trưa" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:id="@+id/chk_dienthoai"
+            android:layout_height="wrap_content"
+            style="@style/TextStyle"
+            android:layout_weight="2"
+            android:checked="false"
+            android:text="Điện thoại" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:id="@+id/chk_xangxe"
+            android:layout_height="wrap_content"
+            style="@style/TextStyle"
+            android:layout_weight="2"
+            android:checked="false"
+            android:text="Xăng xe" />
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_sotien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="clear_text" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_sotien"
+            style="@style/TextStyle"
+            android:hint="Tổng lương"
+            android:enabled="false"
+            android:background="@color/white"
+            android:textColor="#000000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/grp_thanhtoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rdo_tienmat"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:checked="true"
+            android:text="Tiền mặt"/>
+
+        <RadioButton
+            android:id="@+id/rdo_chuyenkhoan"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Chuyển khoản" />
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_tinhluong"
+            style="@style/ButtonStyle"
+            android:text="Tính"
+            />
+        <Button
+            android:id="@+id/btn_xacnhan"
+            style="@style/ButtonStyle"
+            android:onClick="XacNhan"
+            android:text="Xác nhận"
+            android:enabled="false"
+            />
+        <Button
+            android:id="@+id/btn_dong"
+            style="@style/ButtonStyle"
+            android:onClick="Dong"
+            android:text="Đóng" />
+    </LinearLayout>
+</LinearLayout>
